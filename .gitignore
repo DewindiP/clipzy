@@ -10,8 +10,25 @@ frontend/.env
 backend/uploads/
 
 # build
-dist/
-build/
+/dist/
+/build/
 
 # logs
 npm-debug.log*
+
+# IDE/editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ignore all .env files recursively
+**/.env
+**/.env.*
