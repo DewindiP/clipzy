@@ -100,24 +100,12 @@ clipzy/
 - `npm run build` — Build for production
 - `npm run preview` — Preview production build
 
----
-
-## Deployment
-- Configure environment variables for production
-- Use services like Vercel/Netlify (frontend) and Render/Heroku (backend)
-- Set up CORS and secure secrets
-
----
-
-## License
-
-MIT
 
 ---
 
 ## Credits
 
-- Built by [Your Name](https://github.com/yourusername)
+- Built by [Pramodi Dewindi]([https://github.com/DewindiP])
 - Inspired by YouTube Shorts
 - Uses open source libraries: React, Tailwind CSS, Express, MongoDB, Cloudinary
 
@@ -125,7 +113,7 @@ MIT
 
 ## Screenshots
 
-Below are screenshots of every major screen in both light and dark mode. Replace the image links with your actual screenshot files after uploading them to your repository (e.g., in a `screenshots/` folder).
+Below are screenshots of every major screen in both light and dark mode.
 
 ### Home Page
 - Light Mode:
@@ -160,12 +148,6 @@ Below are screenshots of every major screen in both light and dark mode. Replace
   ![Profile Dark](screenshots/profile-dark.png)
 - Dark Mode User2:
   ![Profile Dark](screenshots/user-profile-dark.png)
-
-### Video/Shorts Feed
-- Light Mode:
-  ![Feed Light](screenshots/feed-light.png)
-- Dark Mode:
-  ![Feed Dark](screenshots/feed-dark.png)
 
 ### Comments Section
 - Light Mode:
