@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE LAYER */
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full w-full antialiased font-montserrat bg-white text-gray-900;
+  }
+
+  body {
+    @apply overflow-x-hidden relative;
+  }
+
+  .dark html,
+  .dark body,
+  .dark #root {
+    @apply bg-neutral-900 text-white;
+  }
+
+  a {
+    @apply transition duration-200;
+  }
+
+  button {
+    @apply transition duration-300 ease-in-out;
+  }
+}
+
+/* COMPONENT LAYER */
+@layer components {
+  .glass-card {
+    @apply bg-white/15 backdrop-blur-md border border-white/20 
+           rounded-2xl px-8 pt-10 pb-8 max-w-[350px] mx-auto 
+           text-white shadow-glass relative z-20;
+  }
+
+  .input-group {
+    @apply flex items-center bg-white/20 
+           rounded-lg px-4 py-3 border border-white/30;
+  }
+
+  .input-group input {
+    @apply bg-transparent outline-none text-white w-full;
+  }
+
+  .btn-auth {
+    @apply bg-gradient-to-r from-pink-400 to-pink-300 
+           rounded-lg text-white font-bold py-3 mt-2 
+           shadow-md hover:from-pink-300 hover:to-pink-400;
+  }
+}
+
+/* BOKEH BACKGROUND (Custom CSS — Keep This) */
+.bokeh-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bokeh-bg span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.5;
+}
+
+.bokeh-bg .b1 { background: #ff6a88; width: 300px; height: 300px; top: 10%; left: 10%; }
+.bokeh-bg .b2 { background: #6a11cb; width: 250px; height: 250px; top: 60%; left: 70%; }
+.bokeh-bg .b3 { background: #2575fc; width: 200px; height: 200px; top: 40%; left: 50%; }
+.bokeh-bg .b4 { background: #fff; width: 120px; height: 120px; top: 80%; left: 20%; opacity: 0.2; }
