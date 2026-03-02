@@ -7,7 +7,10 @@ export default function CommentList({ comments }) {
       {comments && comments.length > 0 ? (
         <ul className="list-none p-0">
           {comments.map((c, idx) => (
-            <li key={idx} className="py-2 border-b border-[#444]">
+            <li
+              key={idx}
+              className="py-2 border-b border-[#444] bg-white dark:bg-[#232a3b] rounded mb-2 px-3"
+            >
               <span className="font-bold">{c.user}</span>: {c.text}
             </li>
           ))}

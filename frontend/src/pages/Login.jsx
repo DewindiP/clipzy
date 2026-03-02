@@ -2,12 +2,15 @@ import { useState } from "react";
 import API from "../api/api";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { useTheme } from "../context/ThemeContext";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const { login } = useAuth();
   const navigate = useNavigate();
+  const { theme, toggleTheme } = useTheme();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -111,6 +114,16 @@ export default function Login() {
         </div>
       </form>
       
+      <div className="absolute top-6 right-6">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="p-2 rounded-full bg-[#f3f3f3] dark:bg-[#232a3b] text-black dark:text-white shadow hover:bg-[#eaeaea] dark:hover:bg-[#444] transition-colors"
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? <FiSun size={22} /> : <FiMoon size={22} />}
+        </button>
+      </div>
     </div>
   );
 }

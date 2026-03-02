@@ -152,10 +152,14 @@ Below are screenshots of every major screen in both light and dark mode. Replace
   ![Upload Dark](screenshots/upload-dark.png)
 
 ### Profile Page
-- Light Mode:
+- Light Mode User1 :
   ![Profile Light](screenshots/profile-light.png)
-- Dark Mode:
+- Light Mode User2:
+  ![Profile Light](screenshots/user-profile-light.png)
+- Dark Mode User1:
   ![Profile Dark](screenshots/profile-dark.png)
+- Dark Mode User2:
+  ![Profile Dark](screenshots/user-profile-dark.png)
 
 ### Video/Shorts Feed
 - Light Mode:
