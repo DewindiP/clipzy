@@ -22,15 +22,15 @@ export default function Signup() {
   };
 
   return (
-    <div className="min-h-screen bg-[#181f2a] flex items-center justify-center">
+    <div className="min-h-screen bg-neutral-900 flex items-center justify-center">
       <form
         onSubmit={handleSubmit}
-        className="bg-[rgba(24,31,42,0.95)] rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] p-[1.5rem_1.5rem] max-w-[400px] w-full text-white flex flex-col gap-4 font-montserrat"
+        className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-6 max-w-[400px] w-full text-black dark:text-white flex flex-col gap-4 font-montserrat"
       >
         <div className="flex justify-center mb-4">
           <svg width="48" height="48" fill="none" viewBox="0 0 48 48">
-            <path d="M24 8c8 0 12 8 12 8s-4 8-12 8-12-8-12-8 4-8 12-8z" fill="#6366f1" />
-            <path d="M24 32c-8 0-12-8-12-8s4-8 12-8 12 8 12 8-4 8-12 8z" fill="#6366f1" />
+            <circle cx="24" cy="24" r="20" fill="#ff6a88" />
+            <circle cx="24" cy="24" r="10" fill="#fff" />
           </svg>
         </div>
         <h2 className="text-center font-bold text-2xl mb-2">Create your account</h2>
@@ -76,13 +76,13 @@ export default function Signup() {
         {error && <p className="text-[#ffb3b3] text-center m-0">{error}</p>}
         <button
           type="submit"
-          className="bg-[#6366f1] text-white font-bold text-[1.1rem] border-none rounded-lg py-[0.9rem] mt-2 cursor-pointer transition-colors duration-200 font-montserrat"
+          className="bg-[#ff6a88] hover:bg-[#ff4f7a] text-white font-bold text-[1.1rem] border-none rounded-lg py-[0.9rem] mt-2 cursor-pointer transition-colors duration-200 font-montserrat"
         >
           Sign up
         </button>
         <div className="text-center mt-4 text-[0.95rem]">
           Already have an account?
-          <Link to="/login" className="text-[#6366f1] font-semibold ml-1 no-underline">Sign In</Link>
+          <Link to="/login" className="text-[#ff6a88] font-semibold ml-1 no-underline">Sign In</Link>
         </div>
       </form>
     </div>

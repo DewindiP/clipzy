@@ -125,7 +125,49 @@ MIT
 
 ## Screenshots
 
+Below are screenshots of every major screen in both light and dark mode. Replace the image links with your actual screenshot files after uploading them to your repository (e.g., in a `screenshots/` folder).
 
+### Home Page
+- Light Mode:
+  ![Home Light](screenshots/home-light.png)
+- Dark Mode:
+  ![Home Dark](screenshots/home-dark.png)
+
+### Login Page
+- Light Mode:
+  ![Login Light](screenshots/login-light.png)
+- Dark Mode:
+  ![Login Dark](screenshots/login-dark.png)
+
+### Sign Up Page
+- Light Mode:
+  ![Sign Up Light](screenshots/signup-light.png)
+- Dark Mode:
+  ![Sign Up Dark](screenshots/signup-dark.png)
+
+### Upload Page
+- Light Mode:
+  ![Upload Light](screenshots/upload-light.png)
+- Dark Mode:
+  ![Upload Dark](screenshots/upload-dark.png)
+
+### Profile Page
+- Light Mode:
+  ![Profile Light](screenshots/profile-light.png)
+- Dark Mode:
+  ![Profile Dark](screenshots/profile-dark.png)
+
+### Video/Shorts Feed
+- Light Mode:
+  ![Feed Light](screenshots/feed-light.png)
+- Dark Mode:
+  ![Feed Dark](screenshots/feed-dark.png)
+
+### Comments Section
+- Light Mode:
+  ![Comments Light](screenshots/comments-light.png)
+- Dark Mode:
+  ![Comments Dark](screenshots/comments-dark.png)
 
 ---
 

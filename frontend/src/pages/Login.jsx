@@ -22,17 +22,15 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-[#181f2a] flex items-center justify-center">
+    <div className="min-h-screen bg-neutral-900 flex items-center justify-center">
       <form
         onSubmit={handleSubmit}
-        className="bg-[rgba(24,31,42,0.95)] rounded-2xl shadow-glass 
-                   px-8 py-10 max-w-[400px] w-full text-white 
-                   flex flex-col gap-6"
+        className="bg-white dark:bg-neutral-900 rounded-2xl shadow-lg px-8 py-10 max-w-[400px] w-full text-black dark:text-white flex flex-col gap-6"
       >
         <div className="flex justify-center mb-4">
           <svg width="48" height="48" fill="none" viewBox="0 0 48 48">
-            <path d="M24 8c8 0 12 8 12 8s-4 8-12 8-12-8-12-8 4-8 12-8z" fill="#6366f1" />
-            <path d="M24 32c-8 0-12-8-12-8s4-8 12-8 12 8 12 8-4 8-12 8z" fill="#6366f1" />
+            <circle cx="24" cy="24" r="20" fill="#ff6a88" />
+            <circle cx="24" cy="24" r="10" fill="#fff" />
           </svg>
         </div>
 
@@ -97,9 +95,7 @@ export default function Login() {
 
         <button
           type="submit"
-          className="bg-primary-500 hover:bg-primary-600 
-                     text-white font-bold text-[1.1rem] 
-                     rounded-lg py-4 mt-2 cursor-pointer"
+          className="bg-[#ff6a88] hover:bg-[#ff4f7a] text-white font-bold text-[1.1rem] rounded-lg py-4 mt-2 cursor-pointer transition-colors duration-200"
         >
           Sign in
         </button>
@@ -108,7 +104,7 @@ export default function Login() {
           Don't have an account?
           <Link
             to="/signup"
-            className="text-primary-500 font-semibold ml-1 no-underline"
+            className="text-[#ff6a88] font-semibold ml-1 no-underline"
           >
             Sign Up
           </Link>
